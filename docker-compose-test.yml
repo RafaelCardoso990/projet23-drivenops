@@ -7,7 +7,7 @@ services:
     ports:
       - 4457:5432
     env_file:
-      - back-end/.env.test
+      - .env.test
 
   node_sorteador_app:
     container_name: node_sorteador_app
@@ -17,7 +17,7 @@ services:
     depends_on:
       - postgres_sorteador_db
     env_file:
-      - back-end/.env.test
+      - .env.test
 
   react_sorteador_app:
     container_name: react_sorteador_app
